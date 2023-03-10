@@ -1,0 +1,18 @@
+[gd_resource type="ShaderMaterial" load_steps=2 format=3 uid="uid://btpd26tj3uug0"]
+
+[ext_resource type="Shader" path="res://raymarch_portal.gdshader" id="1_3ocgm"]
+
+[resource]
+render_priority = 0
+shader = ExtResource("1_3ocgm")
+shader_parameter/col_distance_scale = 19.977
+shader_parameter/col_near = Color(0.988235, 0.447059, 0.780392, 1)
+shader_parameter/col_far = Color(0.0196078, 0.00392157, 0.0705882, 1)
+shader_parameter/emission_boost = 5.0
+shader_parameter/sphere_radius = 0.102
+shader_parameter/noise_scale = 3.582
+shader_parameter/detail = 6
+shader_parameter/rough = 0.5
+shader_parameter/inflate = 0.1
+shader_parameter/smooth_fac = 0.75
+shader_parameter/step_mult = 0.26

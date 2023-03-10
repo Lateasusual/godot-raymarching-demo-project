@@ -1,0 +1,32 @@
+[gd_scene load_steps=4 format=3 uid="uid://dihvgccvvvi1n"]
+
+[ext_resource type="Material" uid="uid://btpd26tj3uug0" path="res://raymarch_portal.tres" id="1_pe8r1"]
+
+[sub_resource type="PlaneMesh" id="PlaneMesh_goluu"]
+size = Vector2(10, 10)
+
+[sub_resource type="BoxMesh" id="BoxMesh_od4tu"]
+
+[node name="raymarch_test" type="Node3D"]
+
+[node name="floor" type="MeshInstance3D" parent="."]
+mesh = SubResource("PlaneMesh_goluu")
+
+[node name="cube" type="MeshInstance3D" parent="."]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.69043, 0.436806, -1.02045)
+mesh = SubResource("BoxMesh_od4tu")
+
+[node name="decal3" type="MeshInstance3D" parent="."]
+transform = Transform3D(1.3254, -1.12387, -0.0252293, 0.858576, 1.03721, -1.09884, 0.725645, 0.825549, 1.34622, 0.250525, 0.108918, -1.55131)
+mesh = SubResource("BoxMesh_od4tu")
+surface_material_override/0 = ExtResource("1_pe8r1")
+
+[node name="decal4" type="MeshInstance3D" parent="."]
+transform = Transform3D(1.73793, 0, 0, 0, 1.73794, 0, 0, 0, 1.73793, 1.41455, -2.38419e-07, -0.387116)
+mesh = SubResource("BoxMesh_od4tu")
+surface_material_override/0 = ExtResource("1_pe8r1")
+
+[node name="decal5" type="MeshInstance3D" parent="."]
+transform = Transform3D(2.07723, -0.122448, -0.0727434, 0.115724, 2.07096, -0.181455, 0.0830251, 0.176988, 2.07291, -0.38339, -0.201334, 0.581304)
+mesh = SubResource("BoxMesh_od4tu")
+surface_material_override/0 = ExtResource("1_pe8r1")
